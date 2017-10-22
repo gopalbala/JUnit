@@ -60,3 +60,32 @@ Create a category interface which is a marker interface and decorate methods wit
 
 Run the suite class to run test cases that are part of category
 
+## assertThat
+
+Contains advanced matcher statements
+1. is
+2. hasItem
+3. containsString
+4. IsNull
+5. allOf
+6. anyOf
+7. isAnything
+8. isNot
+9. isSame
+
+## Rules
+
+1. ExpectedException
+2. TemporaryFolder
+3. ExternalResource
+4. ErrorCollector
+5. Verifier
+6. TestWatcher
+7. TestName
+8. Timeout
+9. RuleChain
+
+
+
+
+...

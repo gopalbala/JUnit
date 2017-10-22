@@ -29,3 +29,34 @@ Executes once after the tests are run for the class
 @Test(timeout=100)
 number of milliseconds the test wait for the method to be executed and report failure if the test is not completed in the timeframe.
 
+## Assertions
+
+1. assertArrayEquals
+2. assertEquals
+3. assertTrue
+4. assertFalse
+5. assertNull
+6. assertNotNull
+7. assertSame
+8. assertNotSame
+9. fail
+10. assertThat
+
+## Test Suites
+
+Allows to run multiple test classes without selecting each.
+
+Create a TestSuiteClass and annotate with @RunWith annotation and tell it to use @Suite.SuiteClasses(...)
+
+## Category
+
+Categories are used to categorize tests and are run as a part of test run
+Create a category interface which is a marker interface and decorate methods with @Category with name as the category marker interface.
+
+1. Create a new test suite class
+2. Decorate the suite class with @RunWith(Categories.class)
+3. Decorate the class with @IncludeCategory to include the tests under category 
+4. Decorate the class with @Suite.SuiteClasses({class1.class,class2.class})
+
+Run the suite class to run test cases that are part of category
+
